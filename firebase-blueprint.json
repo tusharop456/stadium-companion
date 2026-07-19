@@ -1,0 +1,74 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User preferences and profile data.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "avatar": {
+          "type": "string"
+        },
+        "isLightMode": {
+          "type": "boolean"
+        },
+        "goalCelebrationEnabled": {
+          "type": "boolean"
+        },
+        "userSeat": {
+          "type": "object",
+          "properties": {
+            "block": { "type": "number" },
+            "row": { "type": "string" },
+            "seat": { "type": "number" }
+          }
+        }
+      }
+    },
+    "Order": {
+      "title": "Order",
+      "description": "User orders for the food menu.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "quantity": { "type": "number" }
+            }
+          }
+        },
+        "status": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "number"
+        },
+        "rating": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "User"
+      },
+      "description": "User profiles"
+    },
+    "/orders/{orderId}": {
+      "schema": {
+        "$ref": "Order"
+      },
+      "description": "Food orders"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  /* Premium Carbon Pitch Vibe (Dark Mode) */
+  --bg-primary: #05080c;
+  --bg-secondary: #0c111a;
+  --bg-tertiary: #161e2e;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent: #10b981; /* Glowing Pitch Emerald */
+  --accent-hover: #059669;
+  --border-color: #1e293b;
+  --success: #10b981;
+}
+
+.light {
+  /* Crisp Daytime Stadia Vibe (Light Mode) */
+  --bg-primary: #f1f5f9; /* Clean sporty gray-blue */
+  --bg-secondary: #ffffff; /* Premium white */
+  --bg-tertiary: #e2e8f0; /* Smooth slate accents */
+  --text-primary: #0f172a; /* Deep dark slate */
+  --text-secondary: #64748b; /* Cool text grey */
+  --accent: #059669; /* Solid day emerald */
+  --accent-hover: #047857;
+  --border-color: #cbd5e1;
+  --success: #10b981;
+}

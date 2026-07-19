@@ -1,0 +1,6 @@
+{
+  "name": "Developer Workbench",
+  "description": "An interactive developer sandbox for building, testing, and generating beautiful Tailwind CSS UI components.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
